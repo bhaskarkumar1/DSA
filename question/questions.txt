@@ -1,0 +1,34 @@
+Maximum Subarray Sum
+Problem Statement :
+
+Amy has an array A of N integers. In one operation she can increase an element of the array by K. She can do this operation at most M times.
+
+She can also increase the same element multiple times. After performing these operations, she wants to know the maximum subarray sum that she can get.
+
+If she does the operations optimally, what is the maximum subarray sum she can get.
+
+We define subarray as continuous segment of the array with length>=0. NOTE: She has to maximise the maximum subarray sum.
+
+Constraints :
+
+1 <= N <= 2105 1 <= M <= 109 | Ai |, | K | <= 109 All input values are integers.
+
+Input Format :
+
+First-line contains three space separated integers N, M and K. Next line contains N space separated integers A1, A2, ...., AN.
+
+Output Format :
+
+Print a single integer denoting the maximum subarray sum that she can get after performing the operations optimally.
+
+Sample Input :
+
+5 2 2 -10 2 -1 5 0
+
+Sample Output:
+
+10
+
+Explanation of Sample:
+
+She would perform operation on the 3rd and 2nd index, So array becomes [ -10, 4,1,5,0] , Maximum Subarray sum is = 10 : [-10, 4, 1, 5, 0]

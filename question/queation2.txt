@@ -1,0 +1,33 @@
+Problem
+Solve
+History
+Ranking
+
+Count IT
+Problem Statement:
+
+You are given an integer N. You have to count the number of sequences A1,A2,..,AN that follows all the below conditions-
+
+0 <= Ai <= 9 There must at least one index i where Ai = 1 (1<=i<=N) There must at least one index i where Ai = 2 (1<=i<=N)
+
+Print the count modulo 998244353.
+
+Constraints:
+
+1 <= N <= 2 * 10^5
+
+Input Format:
+
+• First-line contains N, denoting the length of the sequence.
+
+Output Format
+
+• Print a single integer denoting the count of sequences modulo 998244353 that follows all the above-mentioned conditions.
+
+Sample Input 1 2
+
+Sample Output 1 2
+
+Explanation of Sample 1
+
+Sequences are [1,2] ,[2,1]
