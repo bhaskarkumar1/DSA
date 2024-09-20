@@ -18,13 +18,18 @@ public class Main {
 		Pattern16 p16=new Pattern16();
 //		p16.pattern(10);
 		Pattern17 p17=new Pattern17();
-//		p17.pattern(5);
+		p17.pattern(9);
 		Pattern18 p18=new Pattern18();
 //		p18.pattern(7);
 		Pattern19 p19=new Pattern19();
-//		p19.pattern(5);
+//		p19.pattern(9);
 		Pattern20 p20=new Pattern20();
 //		p20.pattern(7);
+		Pattern21 p21=new Pattern21();
+//		p21.pattern(10);
+		
+		Pattern22 p22=new Pattern22();
+//		p22.pattern(7);
 	}
 
 }

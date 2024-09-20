@@ -1,14 +1,18 @@
 package Pattern;
 
-public class Pattern21 {
+public class Pattern22 {
 	public void pattern(int n) {
 		int st,sp;
 		int t=n;
-		int nst=1,nsp=2*n-3;
+		int nst=n-1,nsp=1;
 		while(t>0) {
-			st=1;
-			sp=1;
-			if(t>1) {
+			st=1;sp=1;
+			if(t==n) {
+				while(st<=2*n-1) {
+					System.out.print("*");
+					st++;
+				}
+			}else {
 				while(st<=nst) {
 					System.out.print("*");
 					st++;
@@ -22,20 +26,15 @@ public class Pattern21 {
 					System.out.print("*");
 					st++;
 				}
-				nsp-=2;
-				nst++;
-			}else {
-				while(st<=2*n-1) {
-					System.out.print("*");
-					st++;
-				}
+				
+				nst--;
+				nsp+=2;
+				
+				
 			}
 			
 			System.out.println();
-			
 			t--;
 		}
-		
 	}
-
 }

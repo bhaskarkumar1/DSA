@@ -5,7 +5,7 @@ public class Pattern17 {
 	public void pattern(int n) {
 		int t=n;
 		int st,sp;
-		int nsp=1,nst=n-1;
+		int nsp=1,nst=n/2;
 		while(t>0) {
 			st=1;
 			sp=1;
@@ -30,15 +30,17 @@ public class Pattern17 {
 				System.out.println();
 				
 			}else {
-				/*
-				 * System.out.println(t); System.out.println(nst); System.out.println(nsp);
-				 * break;
-				 */
-				if(t==n-1) {
-//					System.out.println(sp);
+				
+				 
+				 
+				if(t>=n/2) {
+//					System.out.println(t);
+//					 System.out.println(nst);
+//					 System.out.println(nsp);
+//					  break;
 					nst=1;
-					nsp=2*n-3;
-//					break;
+					nsp=n-2;
+			
 				}
 				
 				while(st<=nst) {
