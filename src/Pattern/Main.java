@@ -31,5 +31,7 @@ public class Main {
 		Pattern22 p22=new Pattern22();
 //		p22.pattern(7);
 	}
+	
+	//pattern question Done ! and all are very easy if you want to do then you can do it
 
 }
