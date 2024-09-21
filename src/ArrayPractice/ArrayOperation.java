@@ -121,6 +121,64 @@ public class ArrayOperation {
 	}
 	
 	
+	// find lower bound 
+	
+	public int lowerBound(int[] arr,int data) {
+		int ans=-1;
+		
+		int lo=0,hi=arr.length-1;
+		int mid;
+		
+		while(lo<=hi) {
+			mid=(lo+hi)/2;
+			
+			if(arr[mid]==data) {
+				hi=mid-1;
+				ans=mid;
+			}else if(arr[mid]>data) {
+				hi=mid-1;
+			}else {
+				lo=mid+1;
+			}
+			
+		}
+		
+		return ans;
+	}
+	
+	
+	// upper bound 
+	
+	public int upperBound(int[] arr, int data) {
+		int ans=-1;
+		
+		int lo=0,hi=arr.length-1;
+		int mid;
+		
+		while(lo<=hi) {
+			mid=(lo+hi)/2;
+			
+			if(arr[mid]==data) {
+				lo=mid+1;
+				ans=mid;
+			}else if(arr[mid]<data) {
+				lo=mid+1;
+			}
+			else {
+				hi=mid-1;
+				
+			}
+			
+			
+		}
+		
+		return ans;
+	}
+	
+	
+	
+	
+	
 	
 	
 	

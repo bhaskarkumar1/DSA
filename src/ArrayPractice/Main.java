@@ -31,9 +31,20 @@ public class Main {
 		
 		int[] res1=a.selectionSort(result);
 		a.display(res1);
+	System.out.println();
+	int[] r1= {10, 20, 30, 40, 50,50,50, 60, 70, 80, 90, 100};
+	int c= a.lowerBound(r1,50);
+	System.out.println("lowewr bound "+c);	
+	int d=a.upperBound(r1,50 );
+	
+	System.out.println("Upper bound: "+d);
 	
 	
-	}
 	
 	
-}
+	
+	
+	}}
+
+	
+
