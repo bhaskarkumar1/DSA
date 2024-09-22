@@ -39,8 +39,19 @@ public class Main {
 	
 	System.out.println("Upper bound: "+d);
 	
+	System.out.println("Wave Printing in2d matrix");
+
+	int[][] mat={{  1,   2,   3,   4},
+				 {  5,   6,   7,   8},
+				 {  9,  10,  11,  12},
+				 { 13,  14,  15,  16},
+				 { 17,  18,  19,  20}};
 	
+	System.out.println(a.wave(mat));
 	
+	System.out.println("GOogle >phone screen question");
+	
+	System.out.println(a.diagonalPhoneScreen(mat));
 	
 	
 	
