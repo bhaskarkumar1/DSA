@@ -7,6 +7,7 @@ public class Main {
 		sp.displayChar("Bhaskar Kumar");
 		System.out.println();
 		sp.substr("Hello Bhaskar");
+		sp.addString("Bhaskar", "kumar");
 	}
 
 }

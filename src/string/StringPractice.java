@@ -11,5 +11,9 @@ public class StringPractice {
 		System.out.println(s.substring(4,4));
 	}
 	
+	public void addString(String s1, String s2) {
+//		System.out.println(s1+s2);
+		System.out.println(s1.concat(s2));
+	}
 	
 }
