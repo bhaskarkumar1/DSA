@@ -6,4 +6,10 @@ public class StringPractice {
 			System.out.print(s.charAt(i)+" ");
 		}
 	}
+	
+	public void substr(String s) {
+		System.out.println(s.substring(4,4));
+	}
+	
+	
 }

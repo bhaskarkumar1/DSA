@@ -5,6 +5,8 @@ public class Main {
 		StringPractice sp=new StringPractice();
 		
 		sp.displayChar("Bhaskar Kumar");
+		System.out.println();
+		sp.substr("Hello Bhaskar");
 	}
 
 }
