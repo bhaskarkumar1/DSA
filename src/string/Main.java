@@ -8,6 +8,7 @@ public class Main {
 		System.out.println();
 		sp.substr("Hello Bhaskar");
 		sp.addString("Bhaskar", "kumar");
+		sp.indexAndStartswith("Bhaskar Hello!");
 	}
 
 }

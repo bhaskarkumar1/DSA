@@ -16,4 +16,10 @@ public class StringPractice {
 		System.out.println(s1.concat(s2));
 	}
 	
+//	indexOf and startsWith
+	public void indexAndStartswith(String s) {
+		System.out.println(s.indexOf("el"));
+		System.out.println(s.startsWith("Bhas"));
+	}
+	
 }
