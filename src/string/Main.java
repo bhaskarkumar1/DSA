@@ -9,6 +9,8 @@ public class Main {
 		sp.substr("Hello Bhaskar");
 		sp.addString("Bhaskar", "kumar");
 		sp.indexAndStartswith("Bhaskar Hello!");
+		sp.isEqual("bhaskar", "ramesh");
+		sp.takeInput();
 	}
 
 }
