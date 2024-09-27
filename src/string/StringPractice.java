@@ -43,5 +43,51 @@ public class StringPractice {
 		}
 	}
 	
+	public void allSubstring(String s) {
+		for(int i=0;i<s.length();i++) {
+			for(int j=i+1;j<s.length()+1;j++) {
+				System.out.print(s.substring(i,j)+" ");
+			}
+		}
+		System.out.println();
+		}
+	//performance of string is too low as it is creating a new string to modify 
+	// and it will return a new index
+	
+	public void performanceOfString(int n) {
+		long start=System.currentTimeMillis();
+		String s="";
+		for(int i=0;i<n;i++) {
+			s=s+i;
+		}
+		long end=System.currentTimeMillis();
+		System.out.println(end-start);
+	}
+	
+//	why StringBuilder?
+//	as StringBuilder allow the modification at same memory address
+	public void introStringBuilder(int n) {
+		System.out.println("String Builder");
+		StringBuilder sb=new StringBuilder();
+		long start=System.currentTimeMillis();
+		for(int i=0;i<n;i++) {
+			sb.append(i);
+		}
+		long end=System.currentTimeMillis();
+		System.out.println(end-start);
+		
+		StringBuilder sb1=new StringBuilder("bhaskar");
+		sb1.insert(0, "mr");
+		sb1.insert(2, '.');
+		System.out.println(sb1);
+		sb1.setCharAt(0, 'M');
+		System.out.println(sb1);
+		sb1.append("k");
+		System.out.println(sb1);
+		sb1.deleteCharAt(sb1.length()-1);
+		System.out.println(sb1);
+		System.out.println("sb1 length: "+sb1.length());
+		
+	}
 	
 }

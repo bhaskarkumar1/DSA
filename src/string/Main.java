@@ -10,7 +10,10 @@ public class Main {
 		sp.addString("Bhaskar", "kumar");
 		sp.indexAndStartswith("Bhaskar Hello!");
 		sp.isEqual("bhaskar", "ramesh");
-		sp.takeInput();
+//		sp.takeInput();
+		sp.allSubstring("abcd");
+		sp.performanceOfString(100000);
+		sp.introStringBuilder(100000);
 	}
 
 }
