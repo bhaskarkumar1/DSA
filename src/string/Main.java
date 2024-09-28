@@ -12,8 +12,11 @@ public class Main {
 		sp.isEqual("bhaskar", "ramesh");
 //		sp.takeInput();
 		sp.allSubstring("abcd");
-		sp.performanceOfString(100000);
-		sp.introStringBuilder(100000);
+		/*
+		 * sp.performanceOfString(100000); sp.introStringBuilder(100000);
+		 */
+		System.out.println("coding block ques start");
+		sp.countString("aaabbcd");
 	}
 
 }

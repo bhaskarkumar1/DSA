@@ -90,4 +90,36 @@ public class StringPractice {
 		
 	}
 	
+	//question count char 
+//	for input aaabbccds --> o/p will be a3b2c2ds
+	
+	public void countString(String s) {
+		int count =0;
+		String res="";
+		
+		for(int i=0;i<s.length();i++) {
+			char currentChar=s.charAt(i);
+		int j;
+		count=1;
+			for(j=i+1;j<s.length();j++) {
+				if(s.charAt(j)==currentChar) {
+					count++;
+				}else {
+					i=j-1;
+					break;
+				}
+			}
+			if(count==1) {
+				res+=currentChar;
+			}else {
+				res+=currentChar;
+				res+=count;
+			}
+		}
+		System.out.println(res);
+	}
+	
+	
+	
+	
 }
