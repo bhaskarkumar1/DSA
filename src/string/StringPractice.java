@@ -168,6 +168,20 @@ public class StringPractice {
 	}
 
 	
-	
+	/*
+	 * Sample Input: acb ,  Sample Output a2c-1b
+	 */
+	public void asciiDiff(String s) {
+		String res="";
+		
+		if(s.length()>=1) res+=s.charAt(0);
+		int ascii;
+		for(int i=1;i<s.length();i++) {
+			ascii=s.charAt(i)-s.charAt(i-1);
+			res+=ascii;
+			res+=s.charAt(i);
+		}
+		System.out.println(res);
+	}
 	
 }

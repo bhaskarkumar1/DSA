@@ -20,6 +20,7 @@ public class Main {
 		sp.splitCamelCase("IAmACompetitiveProgrammer");
 		System.out.println();
 		sp.maxmFrequency("abaaaaaaaaaaaaaabsssssssdsssss");
+		sp.asciiDiff("acb");
 	}
 
 }
