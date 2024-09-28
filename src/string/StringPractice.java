@@ -174,7 +174,7 @@ public class StringPractice {
 	public void asciiDiff(String s) {
 		String res="";
 		
-		if(s.length()>=1) res+=s.charAt(0);
+		if(s.length()>=1) res+= s.charAt(0);
 		int ascii;
 		for(int i=1;i<s.length();i++) {
 			ascii=s.charAt(i)-s.charAt(i-1);
@@ -182,6 +182,22 @@ public class StringPractice {
 			res+=s.charAt(i);
 		}
 		System.out.println(res);
+	}
+	
+	
+	// check the string is palindrome or  not 
+	
+	public boolean isPalindrome(String s) {
+		int l=0,r=s.length()-1;
+		
+		while(l<=r) {
+			if(s.charAt(l)!=s.charAt(r)) {
+				return false;
+			}
+			l++;r--;
+		}
+		
+		return true;
 	}
 	
 }

@@ -21,6 +21,13 @@ public class Main {
 		System.out.println();
 		sp.maxmFrequency("abaaaaaaaaaaaaaabsssssssdsssss");
 		sp.asciiDiff("acb");
+		
+		
+		if(sp.isPalindrome("abab")) {
+			System.out.println("Palindrome");
+		}else {
+			System.out.println("Not Palindrome");
+		}
 	}
 
 }
