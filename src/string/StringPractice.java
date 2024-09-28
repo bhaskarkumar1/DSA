@@ -119,6 +119,24 @@ public class StringPractice {
 		System.out.println(res);
 	}
 	
+	/*
+	 * Sample Input: IAmACompetitiveProgrammer
+	 * 
+	 * Sample Output: I Am A Competitive Programmer
+	 */	
+	
+	public void splitCamelCase(String s) {
+		String res;
+		for(int i=0;i<s.length();i++) {
+			res="";
+			res+=s.charAt(i);
+			while(i+1<s.length() && Character.isLowerCase(s.charAt(i+1))) {
+				res+=s.charAt(i+1);
+				i++;
+			}
+			System.out.print(res+ " ");
+		}
+	}
 	
 	
 	
