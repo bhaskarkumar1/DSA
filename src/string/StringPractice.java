@@ -199,5 +199,18 @@ public class StringPractice {
 		
 		return true;
 	}
+	// dont use ascii value to check the character is lower or upper else print I
+	
+	public void checkCase(String s) {
+		char c= s.charAt(0);
+		
+		if(Character.isLetter(c)) {
+			if(Character.isLowerCase(c)) System.out.println("L");
+			else System.out.println("U");
+		}else {
+			System.out.println("I");
+		}
+		
+	}
 	
 }

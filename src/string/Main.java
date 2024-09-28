@@ -28,6 +28,10 @@ public class Main {
 		}else {
 			System.out.println("Not Palindrome");
 		}
+		sp.checkCase("7haskas");
+
 	}
+	
+	
 
 }
