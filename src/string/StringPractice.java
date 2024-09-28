@@ -1,6 +1,7 @@
 package string;
 
 import java.util.Scanner;
+import java.util.HashMap;
 
 public class StringPractice {
 	public void displayChar(String s) {
@@ -137,6 +138,35 @@ public class StringPractice {
 			System.out.print(res+ " ");
 		}
 	}
+	
+	
+//input: aaabacb  output: a
+//	maxm frequency of char
+	
+	public void maxmFrequency(String s) {
+	HashMap<Character, Integer> map=new HashMap<>();
+	for(int i=0;i<s.length();i++) {
+		if(map.containsKey(s.charAt(i))) {
+//			update the value 
+			map.put(s.charAt(i), map.get(s.charAt(i))+1);
+		}else {
+			map.put(s.charAt(i),1);
+		}
+	}
+	System.out.println(map);
+	int max=0;
+	Character c=null;
+	
+	for(Character k: map.keySet()) {
+		if(map.get(k)>= max) {
+			max=map.get(k);
+			c=k;
+		}
+	}
+	System.out.println(c);
+	
+	}
+
 	
 	
 	

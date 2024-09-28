@@ -18,6 +18,8 @@ public class Main {
 		System.out.println("coding block ques start");
 		sp.countString("aaabbcd");
 		sp.splitCamelCase("IAmACompetitiveProgrammer");
+		System.out.println();
+		sp.maxmFrequency("abaaaaaaaaaaaaaabsssssssdsssss");
 	}
 
 }
