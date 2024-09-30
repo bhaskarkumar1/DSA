@@ -16,6 +16,10 @@ public class Main {
 		System.out.println(qs.fib(31));
 		int[] arr= {1,2,3,4,5,90,1};
 		System.out.println(qs.isArraySorted(arr, 0));
+		int[] array= {0,1,25,8,1,3,2,4,5,2,8,989,8};
+		  
+		System.out.println(qs.firstIndex(array, 0, 7));
+		System.out.print(qs.lastIndex(array, array.length-1, 1));
 		
 	}
 }

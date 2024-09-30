@@ -30,6 +30,22 @@ public class Questions {
 		return isArraySorted(arr,i+1);
 	}
 	
+//	find the first index in an array
+	public int firstIndex(int[] arr, int i,int data) {
+		if(i==arr.length) {
+			return -1;
+		}if(arr[i]==data) {
+			return i;
+		}
+		return firstIndex(arr,i+1,data);
+	}
 	
+//	find the last index 
+	
+	public int lastIndex(int[] arr,int i,int data) {
+		if(i==-1) return -1;
+		if(arr[i]==data) return i;
+		return lastIndex(arr,i-1,data);
+	}
 	
 }
