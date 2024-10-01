@@ -1,5 +1,7 @@
 package recursion;
 
+import java.util.List;
+
 public class Questions {
 	public int fact(int n) {
 		if(n==1) return 1;
@@ -63,5 +65,16 @@ public class Questions {
 			indices[count]=si;
 		}
 		return indices;
+	}
+	
+	// instead of array return in list for the above question
+	public List<Integer> allIndiceinList(int[] arr,int si,int target,List<Integer> ls){
+		if(si==arr.length) return ls;
+		
+		if(arr[si]==target) {
+			ls.add(si);
+		}
+		return allIndiceinList(arr,si+1,target, ls);
+		
 	}
 }
