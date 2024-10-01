@@ -48,4 +48,20 @@ public class Questions {
 		return lastIndex(arr,i-1,data);
 	}
 	
+	// 
+	// return the index of target element in array
+	
+	public int[] allIndices(int[] arr,int si,int target, int count) {
+		int[] indices=null;
+		if(si==arr.length) return new int[count];
+		if(arr[si]==target) {
+			indices=allIndices(arr,si+1,target,count+1);
+		}
+		else indices=allIndices(arr,si+1,target,count);
+		
+		if(arr[si]==target) {
+			indices[count]=si;
+		}
+		return indices;
+	}
 }

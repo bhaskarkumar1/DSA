@@ -1,5 +1,7 @@
 package recursion;
 
+import java.util.Arrays;
+
 public class Main {
 	public static void main(String[] args) {
 //		System.out.print("hello");
@@ -20,6 +22,8 @@ public class Main {
 		  
 		System.out.println(qs.firstIndex(array, 0, 7));
 		System.out.print(qs.lastIndex(array, array.length-1, 1));
+		int[] arr1 = {1,4,8,6,7,52,8,7,1,2,8,0,8};
+		System.out.println(Arrays.toString(qs.allIndices(arr1, 0, 8, 0)));
 		
 	}
 }
