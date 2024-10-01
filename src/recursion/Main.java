@@ -28,5 +28,8 @@ public class Main {
 		ArrayList<Integer> ls=new ArrayList<>();
 		
 		System.out.println(qs.allIndiceinList(arr1, 0, 8, ls));
+		
+		qs.bubbleSort(arr1, 0, arr1.length-1);
+		System.out.println(Arrays.toString(arr1));
 	}
 }

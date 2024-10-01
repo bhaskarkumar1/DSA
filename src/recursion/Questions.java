@@ -77,4 +77,24 @@ public class Questions {
 		return allIndiceinList(arr,si+1,target, ls);
 		
 	}
+	
+	//bubble sort
+	
+	public void bubbleSort(int[] arr,int si, int li) {
+		if(li==0) return;
+		if(si==li) {
+			bubbleSort(arr,0,li-1);
+			return;
+		}
+		
+		if(si+1 <li && arr[si]>arr[si+1]) {
+//			swap
+			int temp=arr[si];
+			arr[si]=arr[si+1];
+			arr[si+1]=temp;
+		}
+		
+	 bubbleSort(arr,si+1,li);
+	}
+	
 }
