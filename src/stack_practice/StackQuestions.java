@@ -209,7 +209,7 @@ public class StackQuestions {
 		for(int i=0;i<arr.length;i++) {
 			int x=(res1[i]-res2[i]-1)*arr[i];
 			
-			if(x>max) max=x;
+			if(x>max) max=x=max;
 		}
 		
 		
