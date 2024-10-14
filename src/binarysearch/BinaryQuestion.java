@@ -79,7 +79,7 @@ public class BinaryQuestion {
 		int res=-1,start=0,end=arr.length-1;
 		
 		while(start<=end) {
-			
+
 			int mid=start+(end-start)/2;
 			if(arr[mid]==target) {
 				res=mid;
@@ -125,13 +125,13 @@ public class BinaryQuestion {
 	public int noOftimesRotation(int[] arr) {
 		int start=0,end=arr.length-1,N=arr.length;
 		
-		
+		if(arr[start]<=arr[end]) return start;
 		while(start<=end) {
 			int mid=start+(end-start)/2;
 			int prev=(mid+N-1)%N;
 			int next=(mid+1)%N;
-			if(arr[start]<=arr[end]) return start;
-			if(arr[mid]<=arr[prev] && arr[mid]<=arr[next]) return mid;
+			
+			if(arr[mid]<=arr[prev] && arr[mid]<=arr[next]) return arr.length-mid;
 			else if(arr[mid]>=arr[end]) {
 				start=mid+1;
 			}else end=mid-1;
@@ -143,6 +143,91 @@ public class BinaryQuestion {
 		
 		return -1;
 	}
+//	find the element in nearlrgffd sorted array
+	
+	public int nearlySortedSearch(int[]arr,int target) {
+		int l=0,r=arr.length-1;
+		
+		while(l<=r) {
+			int mid=l+(r-l)/2;
+			
+			if(mid>l && arr[mid-1]==target) return mid-1; 
+			if(mid<r && arr[mid+1]==target) return mid+1;
+			if(arr[mid]==target) return mid;
+			else if(arr[mid]>target) r=mid-2;
+			else l=mid+2;
+			
+			
+		}
+		
+		
+		
+		return -1;
+	}
+	public int indexInInfinteArray(int[] arr,int target) {
+		int l=0,r=1;
+		
+//		set the bound for l and r
+		while(arr[r]<target) {
+			l=r;
+			r=2*r;
+		}
+//		now i have the bound
+		while(l<=r) {
+			int mid=l+(r-l)/2;
+			if(arr[mid]==target) return mid;
+			else if(arr[mid]>target) r=mid-1;
+			else l=mid+1;
+		}
+		
+		return -1;
+	}
 	
 	
+	
+	public int indexOf1InInfinteSorted(int[] arr) {
+//		set the bound
+		int l=0,r=arr.length-1;
+		
+		while(arr[r]!=1) {
+			l=r;
+			r=2*r;
+		}
+		
+		
+		//find the first occurence 
+		int res=-1;
+		while(l<=r) {
+			
+			int mid=l+(r-l)/2;
+			
+			if(arr[mid]==1) {
+				res=mid;
+				r=mid-1;
+			}else if(arr[mid]<1) l=mid+1;
+			else r=mid-1;
+			
+		}
+		
+		return res;
+		
+		
+	}
+	
+	
+	//find the minimum diffrence element in the sorted array
+	
+	public int minDiff(int[] arr, int target) {
+		int l=0,r=arr.length-1;
+		
+		while(l<=r) {
+			int mid=l+(r-l)/2;
+			if(arr[mid]==target) return mid;
+			else if(arr[mid]<target) l=mid+1;
+			else r=mid-1;
+			
+			
+		}
+		return Math.min(Math.abs(target-arr[l]), Math.abs(target-arr[r]));
+	}
 }

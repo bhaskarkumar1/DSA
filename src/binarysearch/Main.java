@@ -24,11 +24,21 @@ public class Main {
 	
 	System.out.println(bq.countOfTarget(arr3, 10));
 	
-	int[] arr4= {18,22,25,27,2,3,5,7};
-	System.out.println(bq.noOftimesRotation(arr4));
+	int[] arr4= {18,22,25,27,2,3,4,5};
+	System.out.println("hihihi"+bq.noOftimesRotation(arr4));
 	
-//	int[] arr5= {4,5,6,7,0,1,2};
+	 int[] arr5 = { 3, 2, 10, 4, 40 };
+	 System.out.println(bq.nearlySortedSearch(arr5, 40));
+	 
+	 int arr6[] = new int[]{3, 5, 7, 9, 10, 90, 100, 130, 140, 160, 170};
+	 System.out.println(bq.indexInInfinteArray(arr6,9));
+	 
+     int[] arr7 = {0, 0, 0, 0, 0,  1, 1, 1, 1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+     System.out.println(bq.indexOf1InInfinteSorted(arr7));
 
 	
-	}
-}
+	int[] arr8= {1,3,8,10,15};
+	System.out.println("minDiff"+bq.minDiff(arr8, 14));
+	
+}	}
+
