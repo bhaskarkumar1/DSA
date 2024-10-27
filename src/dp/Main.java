@@ -22,6 +22,21 @@ public class Main {
 		System.out.println(kp.memoKnapsack(weight,profit, W, n,dp));
 		
 		System.out.println(kp.topDownKnapsack(weight,profit,W,n));
+		
+		SubsetSum sm=new SubsetSum();
+//		sm.allSubset(weight, n, n)
+		
+		int set[] = { 3, 34, 4, 12, 5, 2 };
+        int sum = 9;
+        int n1 = set.length;
+  
+        if (sm.allSubset(set, n1, sum) == true)
+            System.out.println("Found a subset"
+                               + " with given sum");
+        else
+            System.out.println("No subset with"
+                               + " given sum");
+		
 	}
 	
 }
